@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.Main-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.Header-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .Header-Container img {
+    height: 12.5%;
+    width: 17.5%;
+    margin: 5%; }
+
+.Slide-Container {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 50%;
+  height: auto; }
+  .Slide-Container .Slide {
+    -webkit-box-shadow: 5px 5px 1px 0px rgba(183, 183, 183, 0.63);
+            box-shadow: 5px 5px 1px 0px rgba(183, 183, 183, 0.63); }
+    .Slide-Container .Slide img {
+      width: 100%;
+      height: 100%; }
+
+.Navigation {
+  width: 80%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 5%;
+  margin-bottom: 2.5%; }
+  .Navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .Navigation ul li {
+      list-style-type: none;
+      margin: 0% 1.9%;
+      font-size: 1rem;
+      font-family: sans-serif;
+      font-weight: 400; }
+    .Navigation ul .Floor-Plans-Btn {
+      border: 1px solid #009ba5;
+      padding: 1rem;
+      font-size: 1rem;
+      color: black;
+      border-radius: 10px;
+      margin-left: 1%;
+      outline: none; }
+    .Navigation ul .Floor-Plans-Btn:hover {
+      background-color: #009ba5;
+      color: white; }
+
+.Collection-Title {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: #3b3b3b;
+  font-family: sans-serif;
+  display: none;
+  margin-left: 12.5%; }
+
+.Forty-Collection {
+  display: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%; }
+  .Forty-Collection .Individual {
+    margin: 2.5% 2.5%;
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .Forty-Collection .Individual img {
+      height: 200px;
+      border-radius: 20px; }
+    .Forty-Collection .Individual p {
+      font-family: sans-serif;
+      font-size: 0.9rem; }
+    .Forty-Collection .Individual .Individual-Info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin: 5% 1%; }
+      .Forty-Collection .Individual .Individual-Info #Model {
+        font-weight: bold;
+        text-transform: uppercase; }
+      .Forty-Collection .Individual .Individual-Info #Price {
+        color: #9b0e0e;
+        font-weight: bold; }
+
+.Semi-Collection {
+  display: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  margin-bottom: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .Semi-Collection .Individual {
+    margin: 2.5% 2.5%;
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .Semi-Collection .Individual img {
+      height: 200px;
+      border-radius: 20px; }
+    .Semi-Collection .Individual .Individual-Info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin: 5px 0px; }
+      .Semi-Collection .Individual .Individual-Info #Model {
+        font-weight: bold;
+        text-transform: uppercase; }
+      .Semi-Collection .Individual .Individual-Info #Price {
+        color: #9b0e0e;
+        font-weight: bold; }
+
+.Footer {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+  .Footer img {
+    width: 100%; }
+
+footer {
+  background-color: #3b3b3a;
+  padding: 1% 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  footer .Top-Footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%; }
+    footer .Top-Footer img {
+      height: 12.5%;
+      width: 17.5%;
+      margin: 5%; }
+    footer .Top-Footer #Footer-Nav {
+      margin: 0%; }
+      footer .Top-Footer #Footer-Nav ul li {
+        color: white;
+        margin: 0% 0.5%; }
+  footer p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin-bottom: 2.5%; }
+
+@media (max-width: 1410px) {
+  .Navigation ul li {
+    font-size: 0.8rem;
+    margin: 0% 1.5%; }
+  .Navigation ul .Floor-Plans-Btn {
+    padding: 0.8rem;
+    font-size: 0.8rem; } }
+
+@media (max-width: 1024px) {
+  .Navigation ul li {
+    font-size: 0.7rem;
+    margin: 0% 1.5%; }
+  .Navigation ul .Floor-Plans-Btn {
+    padding: 0.7rem;
+    font-size: 0.8rem; }
+  .Forty-Collection .Individual img {
+    height: 175px; }
+  .Forty-Collection .Individual p {
+    font-size: 0.7rem; }
+  .Semi-Collection .Individual img {
+    height: 175px; }
+  .Semi-Collection .Individual p {
+    font-size: 0.7rem; }
+  .Collection-Title {
+    font-size: 1rem; }
+  footer p {
+    font-size: 0.7rem; } }
+
+@media (max-width: 768px) {
+  .Navigation ul li {
+    font-size: 0.6rem;
+    margin: 0% 1%; }
+  .Navigation ul .Floor-Plans-Btn {
+    padding: 0.6rem;
+    font-size: 0.6rem; }
+  .Forty-Collection .Individual {
+    width: 30%;
+    margin: 2.5% 10%; }
+    .Forty-Collection .Individual img {
+      height: 150px; }
+    .Forty-Collection .Individual p {
+      font-size: 0.7rem; }
+  .Semi-Collection .Individual {
+    width: 30%;
+    margin: 2.5% 10%; }
+    .Semi-Collection .Individual img {
+      height: 150px; }
+    .Semi-Collection .Individual p {
+      font-size: 0.7rem; }
+  .Collection-Title {
+    font-size: 0.85rem; }
+  footer p {
+    font-size: 0.6rem; } }
+
+@media (max-width: 475px) {
+  .Navigation ul li {
+    font-size: 6px;
+    margin: 0% 0.5%; }
+  .Navigation ul .Floor-Plans-Btn {
+    padding: 0.3rem;
+    font-size: 6px;
+    border-radius: 5px; }
+  .Forty-Collection .Individual {
+    width: 35%;
+    margin: 2.5% 10%; }
+    .Forty-Collection .Individual img {
+      height: 100px; }
+    .Forty-Collection .Individual p {
+      font-size: 0.6rem; }
+  .Semi-Collection .Individual {
+    width: 35%;
+    margin: 2.5% 10%; }
+    .Semi-Collection .Individual img {
+      height: 100px; }
+    .Semi-Collection .Individual p {
+      font-size: 0.6rem; }
+  .Collection-Title {
+    font-size: 0.85rem;
+    margin: 0%;
+    text-align: center;
+    margin-bottom: 1%; }
+  footer p {
+    font-size: 6px; } }

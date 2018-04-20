@@ -1,0 +1,79 @@
+{
+    "models": [
+        {
+            "model": "CHELSEA 1",
+            "price": "630,000",
+            "sqft": "1231"
+        },
+        {
+            "model": "CHELSEA 2",
+            "price": "700,000",
+            "sqft": "12231"
+        },
+        {
+            "model": "CHELSEA 3",
+            "price": "800,000",
+            "sqft": "2331"
+        },
+        {
+            "model": "CHELSEA 4",
+            "price": "930,000",
+            "sqft": "4231"
+        },
+        {
+            "model": "CHELSEA 5",
+            "price": "430,000",
+            "sqft": "1231"
+        },
+        {
+            "model": "CHELSEA 6",
+            "price": "500,000",
+            "sqft": "2251"
+        },
+        {
+            "model": "CHELSEA 7",
+            "price": "300,000",
+            "sqft": "1231"
+        },
+        {
+            "model": "CHELSEA 8",
+            "price": "130,000",
+            "sqft": "231"
+        },
+        {
+            "model": "CHELSEA 9",
+            "price": "850,000",
+            "sqft": "4321"
+        },
+        {
+            "model": "CHELSEA 10",
+            "price": "540,000",
+            "sqft": "5211"
+        },
+        {
+            "model": "CHELSEA 11",
+            "price": "630,000",
+            "sqft": "1231"
+        },
+        {
+            "model": "CHELSEA 12",
+            "price": "800,000",
+            "sqft": "1432"
+        },
+        {
+            "model": "CHELSEA 13",
+            "price": "800,000",
+            "sqft": "3541"
+        },
+        {
+            "model": "CHELSEA 14",
+            "price": "900,000",
+            "sqft": "4392"
+        },
+        {
+            "model": "CHELSEA 15",
+            "price": "610,000",
+            "sqft": "2291"
+        }
+    ]
+}

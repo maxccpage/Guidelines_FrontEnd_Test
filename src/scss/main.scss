@@ -1,0 +1,391 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; }
+  
+  body {
+    line-height: 1; }
+  
+  ol, ul {
+    list-style: none; }
+  
+  blockquote, q {
+    quotes: none; }
+  
+  blockquote:before, blockquote:after {
+    content: '';
+    content: none; }
+  
+  q:before, q:after {
+    content: '';
+    content: none; }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  
+//Gulp wouldn't compile CSS RESET in separate file for some reason, so i put it in main file
+
+.Main-Container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.Header-Container {
+    display: flex;
+    justify-content: center;
+    img {
+       height: 12.5%;
+       width: 17.5%;
+       margin: 5%;
+    }
+}
+
+.Slide-Container {
+    align-self: center;
+    width: 50%;
+    height: auto;
+    .Slide {
+        box-shadow: 5px 5px 1px 0px rgba(183, 183, 183, 0.63);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.Navigation {
+    width: 80%;
+    align-self: center;
+    margin: 5%;
+    margin-bottom: 2.5%;
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+            list-style-type: none;
+            margin: 0% 1.9%;
+            font-size: 1rem;
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+        .Floor-Plans-Btn {
+            border: 1px solid #009ba5;
+            padding: 1rem;
+            font-size: 1rem;
+            color: black;
+            border-radius: 10px;
+            margin-left: 1%;
+            outline: none;
+        }
+        .Floor-Plans-Btn:hover {
+            background-color: #009ba5;
+            color: white;
+        }
+    }
+}
+
+.Collection-Title {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: rgb(59, 59, 59);
+    font-family: sans-serif;
+    display: none;
+    margin-left: 12.5%;
+}
+
+.Forty-Collection {
+    display: none;
+    align-self: center;
+    justify-content: center;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    width: 80%;
+    .Individual {
+        margin: 2.5% 2.5%;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        img {
+           height: 200px;
+           border-radius: 20px;
+        }
+        p {
+            font-family: sans-serif;
+            font-size: 0.9rem;
+        }
+        .Individual-Info {
+            display: flex;
+            justify-content: space-between;
+            margin: 5% 1%;
+            #Model {
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            #Price {
+                color: rgb(155, 14, 14);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.Semi-Collection {
+    display: none;
+    align-self: center;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-bottom: 5%;
+    justify-content: center;
+    .Individual {
+        margin: 2.5% 2.5%;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        img {
+           height: 200px;
+           border-radius: 20px;
+        }
+        .Individual-Info {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0px;
+
+            #Model {
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            #Price {
+                color: rgb(155, 14, 14);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// The blue/green/grey image 
+.Footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #3b3b3a;
+    padding: 1% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .Top-Footer {
+        display: flex;
+        width: 60%;
+        img {
+            height: 12.5%;
+            width: 17.5%;
+            margin: 5%;
+        }
+        #Footer-Nav {
+            margin: 0%;
+            ul {
+                li {
+                    color: white;
+                    margin: 0% 0.5%;
+                }
+            }
+        }
+    }
+    p {
+        color: white;
+        font-family: sans-serif;
+        font-size: 0.9rem;
+        font-weight: 200;
+        margin-bottom: 2.5%;
+    }
+}
+
+@media (max-width: 1410px) {
+    .Navigation {
+        ul {
+            li {
+                font-size: 0.8rem;
+                margin: 0% 1.5%;
+            }
+            .Floor-Plans-Btn {
+                padding: 0.8rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .Navigation {
+        ul {
+            li {
+                font-size: 0.7rem;
+                margin: 0% 1.5%;
+            }
+            .Floor-Plans-Btn {
+                padding: 0.7rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .Forty-Collection {
+        .Individual {
+            img {
+                height: 175px;
+            }
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+    .Semi-Collection {
+        .Individual {
+            img {
+                height: 175px;
+            }
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    .Collection-Title {
+        font-size: 1rem;
+    }
+
+    footer {
+        p {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .Navigation {
+        ul {
+            li {
+                font-size: 0.6rem;
+                margin: 0% 1%;
+            }
+            .Floor-Plans-Btn {
+                padding: 0.6rem;
+                font-size: 0.6rem;
+            }
+        }
+    }
+
+    .Forty-Collection {
+        .Individual {
+            width: 30%;
+            margin: 2.5% 10%;
+            img {
+                height: 150px;
+            }
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+    .Semi-Collection {
+        .Individual {
+            width: 30%;
+            margin: 2.5% 10%;
+            img {
+                height: 150px;
+            }
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    .Collection-Title {
+        font-size: 0.85rem;
+    }
+
+    footer {
+        p {
+            font-size: 0.6rem;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .Navigation {
+        ul {
+            li {
+                font-size: 6px;
+                margin: 0% 0.5%;
+            }
+            .Floor-Plans-Btn {
+                padding: 0.3rem;
+                font-size: 6px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .Forty-Collection {
+        .Individual {
+            width: 35%;
+            margin: 2.5% 10%;
+            img {
+                height: 100px;
+            }
+            p {
+                font-size: 0.6rem;
+            }
+        }
+    }
+    .Semi-Collection {
+        .Individual {
+            width: 35%;
+            margin: 2.5% 10%;
+            img {
+                height: 100px;
+            }
+            p {
+                font-size: 0.6rem;
+            }
+        }
+    }
+
+    .Collection-Title {
+        font-size: 0.85rem;
+        margin: 0%;
+        text-align: center;
+        margin-bottom: 1%;
+    }
+
+    footer {
+        p {
+            font-size: 6px;
+        }
+    }
+}
